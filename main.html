@@ -4,10 +4,62 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Car Insurance Registration Form</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container">
+		<h2>Car Insurance Registration Form</h2>
+		<form method="post" action="#">
+			<div class="form-group">
+                <label for="name">Name:</label>
+                <input type="Text" id="name" name="name" required>
+            </div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="Email" id="email" name="email" required>
+			</div>
+
+			<div class="form-group genderGroup">
+                <label>Gender:</label>
+                <input type="Radio" id="genderMale" name="gender" value="male" required>
+                <label for="gender_male">Male</label>
+                <input type="Radio" id="genderFemale" name="gender" value="female" required>
+                <label for="gender_female">Female</label>
+            </div>
+
+			<div class="form-group">
+                <label for="cars">Car Brands:</label>
+                <select id="cars" name="cars" type="Dropdown"> 
+                    <option value="">--Please choose an option--</option>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="mercedes">Mercedes</option>
+                </select>
+            </div>
+
+			<div class="form-group">
+                <label for="carage">Car Age:</label>
+                <input type="Number" id="carage" name="carage" required>
+            </div>
+
+			<div class="form-group">
+                <label for="dop">Date of Purchase(dop):</label>
+                <input type="Date" id="dop" name="dop" required>
+            </div>
+
+			<div class="form-group">
+                <label for="password">Password:</label>
+                <input type="Password" id="password" name="password" required>
+            </div>
+
+			<div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+		</form>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
